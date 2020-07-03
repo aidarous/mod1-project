@@ -13,7 +13,7 @@
 /* Archetype and moveset */
 
 class Moveset {
-    constructor(){
+    constructor(firstMove, secondMove, thirdMove){
         this.firstMove = firstMove;
         this.secondMove = secondMove;
         this.thirdMove = thirdMove;
@@ -22,15 +22,22 @@ class Moveset {
 
 
 
-
 let shotClock = 24;
-//let choose = prompt("Please pick a player \nPress 1 for Guard \nPress 2 for Forward \nPress 3 for Center")
+
 let players = ["Guard", "Forward", "Center"]
-
-
+let guardMoveset = new Moveset("Shoot", "Pass", "Steal") 
+let forwardMoveset = new Moveset("Catch and shoot", "Cut to basket", "Help defense")
+let centerMoveset = new Moveset("Dunk", "Pick and roll", "Block")
 let chooseOpponent = Math.floor(Math.random()*3);
 let opponent = players[chooseOpponent]
 console.log(opponent)
+
+// choose a player
+let choosePlayer = () => {
+
+
+}
+
 // create conditons for players to score
 // 
 
