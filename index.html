@@ -7,18 +7,33 @@
     <title>Play Basketball RPS</title>
 </head>
 <body>
+    <script src="app.js"></script>
     <header><h1>Basketball RPS</h1></header><br>
     <p> welcome to basketball rps</p>
-
-    
-        <div class="button- background">
-            <button type="button" onclick="" id="shoot"> Shoot</button>
-
-            <button type="button" onclick="" id="pass"> Pass</button>
-
-            <button type="button" onclick="" id="block"> Block</button>
+    <div class="game-layout">
+        <div class="scoreboard">
+            <span id="shotclock"></span>
+            <h3 id="player-nametag" >You</h3>
+            <h3 id="opponent-nametag">Opponent</h3>
+            <span id="player-score">0</span>-<span id="opponent-score">0</span>
         </div>
-    <script src="app.js"></script>
+    
+        <div class="button-background">
+            
+            <button type="button" onclick="playerShoot()" id="shoot" > <img src="assets/jumpshot.jpg" class="icons"></button>
+            
+            <button type="button" onclick="playerPass()" id="pass" > <img src="assets/pass.jpg" class="icons"></button>
+            
+            <button type="button" onclick="playerBlock()" id="block" ><img src="assets/block.jpg" class="icons"></button>
+        </div>
+
+        <div class="result">
+            <p id="playerClick"></p>
+
+        </div>
+
     </div>
+    
+    
 </body>
 </html>

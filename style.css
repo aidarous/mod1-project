@@ -5,7 +5,30 @@ h1{
 p{
     text-align: center;
 }
-.button-background{
+body{
     background : url('assets/bballcourt.jpg');
     
+    
+}
+
+.scoreboard{
+    border: solid blue;
+    width: 250px;
+    
+}
+
+.icons{
+    width: 120px;
+    height: 100px;
+    align-items: center;
+    
+}
+.icons:hover{
+    animation-name: icons;
+    animation-fill-mode: forwards;
+}
+@keyframes icons {
+    100%{
+    height: 150px;
+    }
 }
