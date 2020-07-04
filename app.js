@@ -9,15 +9,21 @@ const opponentScore = 0;
 
 let moveSet = ["Shoot", "Pass", "Block"] 
 let choiceGenerator = Math.floor(Math.random()*3); // randomizes the choice made by the computer
+let opponentMove = moveSet[choiceGenerator];
 
-    let playerShoot = () => {
-        document.getElementById('playerClick').innerHTML = 'Shoot!'
+let playerShoot = () => {   
+    document.getElementById('playerClick').innerHTML = 'You chose shoot!'   
+    document.getElementById('opponentChoice').innerHTML = `Opponent chose ${opponentMove}!`
     }
-    let playerPass = () => {
-        document.getElementById('playerClick').innerHTML = 'Pass!'
-    }
-    let playerBlock = () => {
-        document.getElementById('playerClick').innerHTML = 'Block!'
+     
+let playerPass = () => {  
+    document.getElementById('playerClick').innerHTML = 'You chose pass!'
+    document.getElementById('opponentChoice').innerHTML = `Opponent chose ${opponentMove}!`
+    }  
+
+let playerBlock = () => {
+    document.getElementById('playerClick').innerHTML = 'You chose block!'
+    document.getElementById('opponentChoice').innerHTML = `Opponent chose ${opponentMove}!`
     }
 
 
