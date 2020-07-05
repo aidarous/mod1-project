@@ -20,11 +20,11 @@
     
         <div class="button-background">
             
-            <button type="button" onclick="playerShoot()" id="shoot" > <img src="assets/jumpshot.jpg" class="icons"></button>
+            <button type="button" onclick="game(this.value)" id="shoot" value="Shoot"> <img src="assets/jumpshot.jpg" class="icons"></button>
             
-            <button type="button" onclick="playerPass()" id="pass" > <img src="assets/pass.jpg" class="icons"></button>
+            <button type="button" onclick="game(this.value)" id="pass" value="Pass"> <img src="assets/pass.jpg" class="icons"></button>
             
-            <button type="button" onclick="playerBlock()" id="block" ><img src="assets/block.jpg" class="icons"></button>
+            <button type="button" onclick="game(this.value)" id="block" value="Block"><img src="assets/block.jpg" class="icons"></button>
         </div>
 
         <div class="result">

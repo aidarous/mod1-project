@@ -5,9 +5,9 @@ h1{
 p{
     text-align: center;
 }
-body{
+.game-layout{
     background : url('assets/bballcourt.jpg');
-    
+    width: 100vw;
     
 }
 
@@ -16,10 +16,13 @@ body{
     width: 250px;
     
 }
-
+button{
+    border-radius: 45%;
+}
 .icons{
     width: 120px;
     height: 100px;
+    border-radius: 45%;
     align-items: center;
     
 }
