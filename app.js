@@ -8,28 +8,29 @@ let playerScore = 0;
 let displayPlayerScore = document.getElementById('player-score');
 let opponentScore = 0;
 let displayOpponentScore = document.getElementById('opponent-score');
-let opponentChoice = () =>{
-    let moveSet = ["Shoot", "Pass", "Block"] 
-    let choiceGenerator = Math.floor(Math.random()*3);
-    return moveSet[choiceGenerator];
-}
-let opponentDecision = opponentChoice()
+
+let moveSet = ["Shoot", "Pass", "Block"] 
+let choiceGenerator = Math.floor(Math.random()*3);
+let opponentChoice = moveSet[choiceGenerator];
+
+
 
 // Compare player decision and oppenent decision
 // Score conditions
 function game(playerChoice){
-    if(playerChoice === "Shoot" && opponentDecision === "Pass" || playerChoice === "Pass" && opponentDecision === "Block" || playerChoice === "Block" && opponentDecision === "Shoot"){
+    if(playerChoice === "Shoot" && opponentChoice === "Pass" || playerChoice === "Pass" && opponentChoice === "Block" || playerChoice === "Block" && opponentChoice === "Shoot"){
         console.log("Win!")
         let win = document.getElementById('playerClick')
-        win.innerText = `Well done! You chose ${playerChoice} and opponent chose ${opponentDecision}`
+        win.innerText = `Well done! You chose ${playerChoice} and opponent chose ${opponentChoice}`
         playerScore++;
         displayPlayerScore.innerHTML = `${playerScore}`
-    } else if(opponentDecision === "Shoot" && playerChoice === "Pass" || opponentDecision === "Pass" && playerChoice === "Block" || opponentDecision === "Block" && playerChoice === "Shoot"){
-        document.getElementById('PlayerClick')
-        lose.innerText = `Touch luck! You chose ${playerChoice}and opponent chose ${opponentDecision}`
+    } else if(opponentChoice === "Shoot" && playerChoice === "Pass" || opponentChoice === "Pass" && playerChoice === "Block" || opponentChoice === "Block" && playerChoice === "Shoot"){
+        let lose = document.getElementById('playerClick')
+        lose.innerText = `Touch luck! You chose ${playerChoice} and opponent chose ${opponentChoice}`
         opponentScore++;
-    } else if(playerChoice === opponentScore){
-        document.getElementById('PlayerClick').innerText = `You chose ${playerChoice} and opponent chose ${opponentDecision}! Its a draw!`
+    } else{
+        let draw = document.getElementById('playerClick')
+        draw.innerText = `You chose ${playerChoice} and opponent chose ${opponentChoice}! Its a draw!`
     }
 }
 
