@@ -28,9 +28,10 @@ function game(playerChoice){
         let lose = document.getElementById('playerClick')
         lose.innerText = `Touch luck! You chose ${playerChoice} and opponent chose ${opponentChoice}`
         opponentScore++;
+        displayOpponentScore.innerHTML = `${opponentScore}`
     } else{
         let draw = document.getElementById('playerClick')
-        draw.innerText = `You chose ${playerChoice} and opponent chose ${opponentChoice}! Its a draw!`
+        draw.innerText = `You chose ${playerChoice} and your opponent chose ${opponentChoice}! Its a draw!`
     }
 }
 
