@@ -34,9 +34,14 @@ let gameOver = () => {
     }
 
 }
-
+// resets scoreboard to start a new game
 let restartGame = () =>{
-
+    alert("You have restarted the game")
+    opponentScore = 0;
+    displayOpponentScore.innerHTML = `${opponentScore}`
+    playerScore = 0;
+    displayPlayerScore.innerHTML = `${playerScore}`
+    document.getElementById('playerClick').innerHTML = ""
 }
 // 
 let resetOpponentDecision = () => {
