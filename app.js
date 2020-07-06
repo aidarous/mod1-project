@@ -15,17 +15,32 @@ let opponentChoice = moveSet[choiceGenerator];
 
 
 
-// Compare player decision and oppenent decision
-// Score conditions
+let gameOver = () => {
+    
+    if(playerScore == 16){
+        alert("YOU WIN!!")
+        let = opponentScore = 0;
+        let = playerScore = 0;
+    } else if(opponentScore == 16){
+        alert("YOU LOSE")
+        let = opponentScore = 0;
+        let = playerScore = 0;
+    }
+
+}
+
+
+
+
 function game(playerChoice){
     if(playerScore <= 16 || opponentScore <= 16){ 
-        if(playerChoice === "Shoot" && opponentChoice === "Pass" || playerChoice === "Pass" && opponentChoice === "Block" || playerChoice === "Block" && opponentChoice === "Shoot"){
+        if(playerChoice === "Shoot" && opponentChoice === "Pass" || playerChoice === "Pass" && opponentChoice === "Block" || playerChoice === "Block" && opponentChoice === "Shoot"){// conditions for player to score
             console.log("Win!")
             let win = document.getElementById('playerClick')
             win.innerText = `Well done! You chose ${playerChoice} and opponent chose ${opponentChoice}`
             playerScore++;
             displayPlayerScore.innerHTML = `${playerScore}`
-        } else if(opponentChoice === "Shoot" && playerChoice === "Pass" || opponentChoice === "Pass" && playerChoice === "Block" || opponentChoice === "Block" && playerChoice === "Shoot"){
+        } else if(opponentChoice === "Shoot" && playerChoice === "Pass" || opponentChoice === "Pass" && playerChoice === "Block" || opponentChoice === "Block" && playerChoice === "Shoot"){ // conditions for opponent to score
             let lose = document.getElementById('playerClick')
             lose.innerText = `Touch luck! You chose ${playerChoice} and opponent chose ${opponentChoice}`
             opponentScore++;
@@ -34,14 +49,8 @@ function game(playerChoice){
             let draw = document.getElementById('playerClick')
             draw.innerText = `You chose ${playerChoice} and your opponent chose ${opponentChoice}! Its a draw!`
         }
-        
+        gameOver()
     }
-    if(playerScore == 16){
-        alert("YOU WIN!!")
-    } else if(opponentScore == 16){
-        alert("YOU LOSE")
-    }
-    
 }
 
 

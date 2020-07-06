@@ -7,7 +7,9 @@ p{
 }
 .game-layout{
     background : url('assets/bballcourt.jpg');
-    width: 100vw;
+    background-size: 1500px 1500px;
+    background-repeat: no-repeat;
+    border: black;
     
 }
 
