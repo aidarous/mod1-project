@@ -1,4 +1,7 @@
-
+@font-face{
+    font-family: 'digital-font';
+    src: url('assets/digital-font.ttf')
+}
 h1{
     text-align: center;
     background-color: aliceblue;
@@ -16,7 +19,7 @@ p{
 
 }
 .name-tag{
-    font-family: ;
+    
 }
 .scoreboard{
     display: flex;
@@ -26,14 +29,14 @@ p{
     width: 250px;
     margin: auto;   
 }
-span{
-    color: red;
-}
+
 .name-tag{
     color: white;
 }
 .score-font{
-    font-family:'Digital-7 Regular ';
+    color: red;
+    font-size: xx-large;
+    font-family: 'digital-font'
     
 }
 .buttons-container{
