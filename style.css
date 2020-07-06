@@ -18,7 +18,10 @@ p{
     grid-row-gap: 50px;
 
 }
-
+.name-tag{
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+}
 .scoreboard{
     display: flex;
     justify-content: space-around;
