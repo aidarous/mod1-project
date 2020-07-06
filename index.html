@@ -16,18 +16,19 @@
             <span id="shotclock"></span>
             <h3 id="player-nametag" >You</h3>
             <h3 id="opponent-nametag">Opponent</h3>
-            <span id="player-score">0</span>-<span id="opponent-score">0</span>
+            <span id="player-score">0</span> - <span id="opponent-score">0</span>
         </div>
     
         <div class="button-background">
             
-            <button type="button" onclick="game(this.value)" id="shoot" value="Shoot"> <img src="assets/jumpshot.jpg" class="icons"></button>
-            <button type="button" onclick="game(this.value)" id="pass" value="Pass"> <img src="assets/pass.jpg" class="icons"></button>    
-            <button type="button" onclick="game(this.value)" id="block" value="Block"><img src="assets/block.jpg" class="icons"></button>
+            <button type="button" class="choose-button" onclick="game(this.value)" id="shoot" value="Shoot"> <img src="assets/jumpshot.jpg" class="icons"></button>
+            <button type="button" class="choose-button" onclick="game(this.value)" id="pass" value="Pass"> <img src="assets/pass.jpg" class="icons"></button>    
+            <button type="button" class="choose-button" onclick="game(this.value)" id="block" value="Block"><img src="assets/block.jpg" class="icons"></button>
         </div>
 
         <div class="result">
             <p id="playerClick"></p>
+            <button type="button"id="restart-button" >Restart</button>
 
         </div>
         <div id="replay">

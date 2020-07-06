@@ -18,9 +18,10 @@ p{
     width: 250px;
     
 }
-button{
+.choose-button{
     border-radius: 45%;
 }
+
 .icons{
     width: 120px;
     height: 100px;
