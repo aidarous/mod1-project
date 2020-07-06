@@ -10,10 +10,12 @@ p{
     text-align: center;
 }
 .game-layout{
-    background-color : ;
-    background-size: 1500px 1500px;
-    background-repeat: no-repeat;
-    align-items: center;
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 50px;;
+    
+    
+    
     
 }
 .name-tag{
@@ -30,8 +32,10 @@ p{
     font-family:'Digital-7 Regular ';
     
 }
-.buttons-display{
-    margin: auto;
+.buttons-container{
+    display: flex;
+    justify-content: center;
+
 }
 .choose-button{
     border-radius: 45%;
@@ -41,8 +45,6 @@ p{
     width: 120px;
     height: 100px;
     border-radius: 45%;
-    : auto;
-    
 }
 .icons:hover{
     animation-name: icons;

@@ -21,17 +21,16 @@
             <span id="player-score" class="score-font">0</span> - <span id="opponent-score" class="score-font">0</span>
         </div>
     
-        <div class="buttons-display">
+        <div class="buttons-container">
             
-            <button type="button" class="choose-button" onclick="game(this.value)" id="shoot" value="Shoot"> <img src="assets/jumpshot.jpg" class="icons"></button>
-            <button type="button" class="choose-button" onclick="game(this.value)" id="pass" value="Pass"> <img src="assets/pass.jpg" class="icons"></button>    
-            <button type="button" class="choose-button" onclick="game(this.value)" id="block" value="Block"><img src="assets/block.jpg" class="icons"></button>
+            <div><button type="button" class="choose-button" onclick="game(this.value)" id="shoot" value="Shoot"> <img src="assets/jumpshot.jpg" class="icons"></button></div>
+            <div><button type="button" class="choose-button" onclick="game(this.value)" id="pass" value="Pass"> <img src="assets/pass.jpg" class="icons"></button></div>    
+            <div><button type="button" class="choose-button" onclick="game(this.value)" id="block" value="Block"><img src="assets/block.jpg" class="icons"></button></div>
         </div>
 
         <div class="result">
             <p id="playerClick"></p>
-            <divid="restart-button"><button type="button onclick="restartGame()" >Restart</button></div>
-
+            <button type="button onclick="restartGame()" >Restart</button>
         </div>
 
     </div>
