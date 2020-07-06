@@ -18,12 +18,10 @@ p{
     grid-row-gap: 50px;
 
 }
-.name-tag{
-    
-}
+
 .scoreboard{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     border: solid gray;
     background-color: black;
     width: 250px;
