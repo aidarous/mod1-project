@@ -1,7 +1,7 @@
 /* Basketball RPS */
 
 
-/* Set up Global variables for future use*/
+/* Set up Global variables and functions for future use*/
 
 // const shotClock = 24;
 let playerScore = 0;

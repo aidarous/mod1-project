@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://www.1001fonts.com/digital-7-font.html" rel="stylesheet">
     <title>Play Basketball RPS</title>
 </head>
+<header><h1>Basketball RPS</h1></header><br>
 <body>
     
-    <header><h1>Basketball RPS</h1></header><br>
+    
     <p> welcome to basketball rps</p>
     
     <div class="game-layout">
         <div class="scoreboard">
-            <span id="shotclock"></span>
-            <h3 id="player-nametag" >You</h3>
-            <h3 id="opponent-nametag">Opponent</h3>
-            <span id="player-score">0</span> - <span id="opponent-score">0</span>
+            
+            <p id="player-nametag" class="name-tag">You</p>
+            <p id="opponent-nametag" class="name-tag">Opponent</p>
+            <span id="player-score" class="score-font">0</span> - <span id="opponent-score" class="score-font">0</span>
         </div>
     
-        <div class="button-background">
+        <div class="buttons-display">
             
             <button type="button" class="choose-button" onclick="game(this.value)" id="shoot" value="Shoot"> <img src="assets/jumpshot.jpg" class="icons"></button>
             <button type="button" class="choose-button" onclick="game(this.value)" id="pass" value="Pass"> <img src="assets/pass.jpg" class="icons"></button>    
@@ -28,10 +30,7 @@
 
         <div class="result">
             <p id="playerClick"></p>
-            <button type="button"id="restart-button" onclick="restartGame()" >Restart</button>
-
-        </div>
-        <div id="replay">
+            <divid="restart-button"><button type="button onclick="restartGame()" >Restart</button></div>
 
         </div>
 
