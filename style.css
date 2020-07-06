@@ -4,7 +4,9 @@
 }
 h1{
     text-align: center;
-    background-color: aliceblue;
+    color: white;
+    font-family: "digital-font";
+    font-size: 50px;
 }
 body{
     background: url('assets/bballarena.jpg')no-repeat center center fixed;
@@ -15,7 +17,9 @@ p{
 .game-layout{
     display: grid;
     justify-content: center;
-    grid-row-gap: 50px;
+    grid-row-gap: 75px;
+    background-color: #B8860B;
+    border-color: #708090;
 
 }
 .name-tag{
