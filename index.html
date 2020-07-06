@@ -15,10 +15,14 @@
     
     <div class="game-layout">
         <div class="scoreboard">
-            
+            <div>
             <p id="player-nametag" class="name-tag">You</p>
+            <span id="player-score" class="score-font">0</span> :
+            </div>
+            <div>
             <p id="opponent-nametag" class="name-tag">Opponent</p>
-            <span id="player-score" class="score-font">0</span> - <span id="opponent-score" class="score-font">0</span>
+            <span id="opponent-score" class="score-font">0</span>
+            </div>
         </div>
     
         <div class="buttons-container">
@@ -30,7 +34,7 @@
 
         <div class="result">
             <p id="playerClick"></p>
-            <button type="button onclick="restartGame()" >Restart</button>
+            <button type="button" onclick="restartGame()" >Restart</button>
         </div>
 
     </div>

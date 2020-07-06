@@ -12,21 +12,25 @@ p{
 .game-layout{
     display: grid;
     justify-content: center;
-    grid-row-gap: 50px;;
-    
-    
-    
-    
+    grid-row-gap: 50px;
+
 }
 .name-tag{
     font-family: ;
 }
 .scoreboard{
-    border: solid blue;
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    border: solid gray;
+    background-color: black;
     width: 250px;
-    margin: auto;
-    
+    margin: auto;   
+}
+span{
+    color: red;
+}
+.name-tag{
+    color: white;
 }
 .score-font{
     font-family:'Digital-7 Regular ';
