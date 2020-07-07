@@ -6,13 +6,14 @@ h1{
     text-align: center;
     color: white;
     font-family: "digital-font";
-    font-size: 50px;
+    font-size: 60px;
 }
 body{
     background: url('assets/bballarena.jpg')no-repeat center center fixed;
 }
 p{
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 .modal{
     display: none;
@@ -24,7 +25,7 @@ p{
   height: 100%; 
   overflow: auto; 
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 .game-summary{
     background-color: #fefefe;
@@ -84,6 +85,7 @@ p{
 .restart{
     background: #0000CD;
     border-color: white;
+    color: white;
     border-radius: 10%;
     font-size: 40px;
     
@@ -104,6 +106,6 @@ p{
 }
 @keyframes icons {
     100%{
-    height: 125px;
+    border: #1E90FF;
     }
 }
