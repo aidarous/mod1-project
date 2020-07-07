@@ -100,12 +100,12 @@ p{
     height: 100px;
     border-radius: 45%;
 }
-.icons:hover{
-    animation-name: icons;
+.restart:hover{
+    animation-name: restart;
     animation-fill-mode: forwards;
 }
-@keyframes icons {
+@keyframes restart {
     100%{
-    border: #1E90FF;
+    color: black;
     }
 }
