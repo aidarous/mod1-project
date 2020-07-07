@@ -1,5 +1,11 @@
 /* Basketball RPS */
 
+// Pseudo code
+// 1. create score limit to win
+// 2. set up conditions from basketball logicto decide a turn (shoot beats pass, pass beats block, block beats shot)
+// 3. create choices for opponent and randomize them
+// 4. create option to quit game
+// 5. 
 // Get the modal
 var modal = document.getElementById("modal-container");
 var btn = document.getElementById("modal-button");
@@ -34,7 +40,7 @@ let opponentChoice = moveSet[choiceGenerator];
 
 
 let gameOver = () => {
-    /* Resets game player wins or loses */
+    /* Resets game when player wins or loses */
     if(playerScore == 16){
         alert("YOU WIN!!")
         opponentScore = 0;
@@ -67,9 +73,10 @@ let resetOpponentDecision = () => {
     opponentChoice = moveSet[choiceGenerator];
 }
 
-
+// The bulk of where the game takes place
+// first player to 16 points wins like a pickup basketball game
 function game(playerChoice){
-    if(playerScore <= 16 || opponentScore <= 16){ 
+    if(playerScore <= 16 || opponentScore <= 16){ // tried to use while loop but froze the browser 
         if(playerChoice === "Shoot" && opponentChoice === "Pass" || playerChoice === "Pass" && opponentChoice === "Block" || playerChoice === "Block" && opponentChoice === "Shoot"){// conditions for player to score
             let win = document.getElementById('playerClick')
             win.innerText = `Well done! You chose ${playerChoice} and opponent chose ${opponentChoice}`
