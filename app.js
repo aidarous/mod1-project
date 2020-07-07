@@ -1,9 +1,14 @@
 /* Basketball RPS */
 
-
+//modal containing game instructions
+let modal = document.getElementById('modal-container');
+let btn = document.getElementById('modal-button');
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+let span = document.getElementById('close')[0];
 /* Set up Global variables and functions for future use*/
 
-// const shotClock = 24;
 let playerScore = 0;
 let displayPlayerScore = document.getElementById('player-score');
 let opponentScore = 0;
@@ -43,7 +48,7 @@ let restartGame = () =>{
     displayPlayerScore.innerHTML = `${playerScore}`
     document.getElementById('playerClick').innerHTML = ""
 }
-// 
+// ensures opponent choice gets randomized every turn
 let resetOpponentDecision = () => {
     choiceGenerator = Math.floor(Math.random()*3);
     opponentChoice = moveSet[choiceGenerator];
@@ -66,7 +71,7 @@ function game(playerChoice){
             displayOpponentScore.innerHTML = `${opponentScore}`
             resetOpponentDecision()
             console.log(opponentChoice)
-        } else{
+        } else{ // when conditions for opponent or player to score aren't met then its a draw
             let draw = document.getElementById('playerClick')
             draw.innerText = `You chose ${playerChoice} and your opponent chose ${opponentChoice}! Its a draw!`
             resetOpponentDecision()
