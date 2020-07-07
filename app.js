@@ -2,10 +2,10 @@
 
 // Pseudo code
 // 1. create score limit to win
-// 2. set up conditions from basketball logicto decide a turn (shoot beats pass, pass beats block, block beats shot)
+// 2. set up conditions from basketball logic to decide a turn (shoot beats pass, pass beats block, block beats shot)
 // 3. create choices for opponent and randomize them
 // 4. create option to quit game
-// 5. 
+// 5. add special effects and more functionality if possible
 // Get the modal
 var modal = document.getElementById("modal-container");
 var btn = document.getElementById("modal-button");

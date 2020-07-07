@@ -8,4 +8,4 @@ Shoot Pass and Block your way to victory against the computer in a rock paper sc
 * Create a visual that resembles a basketball atmosphere with html/css
 * Fine tuning the visual display to a desirable level
 * Adding sound effects and animations 
-* Using functions 
+* Using functions and oop
