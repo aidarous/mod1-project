@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Play Basketball RPS</title>
 </head>
 <header><h1>Basketball RPS</h1></header><br><br>
@@ -36,14 +37,14 @@
     
         <div class="buttons-container">
             
-            <div><button type="button" class="choose-button" onclick="game(this.value)" id="shoot" value="Shoot"> <img src="assets/jumpshot.jpg" class="icons"></button></div>
-            <div><button type="button" class="choose-button" onclick="game(this.value)" id="pass" value="Pass"> <img src="assets/pass.jpg" class="icons"></button></div>    
-            <div><button type="button" class="choose-button" onclick="game(this.value)" id="block" value="Block"><img src="assets/block.jpg" class="icons"></button></div>
+            <div><button type="button" class="rounded-circle" onclick="game(this.value)" id="shoot" value="Shoot"> <img src="assets/jumpshot.jpg" class="icons"></button></div>
+            <div><button type="button" class="rounded-circle" onclick="game(this.value)" id="pass" value="Pass"> <img src="assets/pass.jpg" class="icons"></button></div>    
+            <div><button type="button" class="rounded-circle" onclick="game(this.value)" id="block" value="Block"><img src="assets/block.jpg" class="icons"></button></div>
         </div>
 
         <div class="result">
             <p id="playerClick"></p>
-            <button type="button" onclick="restartGame()" class="restart">Restart</button>
+            <button type="button" onclick="restartGame()" class="btn btn-dark">Restart</button>
         </div>
 
     </div>

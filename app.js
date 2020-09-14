@@ -19,7 +19,7 @@ btn.onclick = function() {
 span.onclick = function() {
   modal.style.display = "none";
 }
-// closes modal from anywhere on screen
+// closes modal by clicking anywhere on screen
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
