@@ -11,10 +11,10 @@ h1{
 body{
     background: url('assets/bballarena.jpg')no-repeat center center fixed;
 }
-p{
+.outcome{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: .5px .5px gainsboro;
+    font-family: 'Permanent Marker', cursive;;
+    
 }
 .modal{
     display: none;
@@ -92,6 +92,10 @@ p{
     width: 90px;
     height: 100px;
     border-radius: 45%;
+}
+
+.outcome{
+    size: 20vh;
 }
 
 @keyframes restart {
