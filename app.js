@@ -57,6 +57,7 @@ let gameOver = () => {
         playerScore = 0;
         displayPlayerScore.innerHTML = `${playerScore}`
         document.getElementById('playerClick').innerHTML = ""
+        buzzer.play();
     }
 
 }
