@@ -32,6 +32,7 @@ let playerScore = 0;
 let displayPlayerScore = document.getElementById('player-score');
 let opponentScore = 0;
 let displayOpponentScore = document.getElementById('opponent-score');
+let buzzer = new Audio("assets/Buzzer-SoundBible.com-188422102.mp3");
 
 let moveSet = ["Shoot", "Pass", "Block"] 
 let choiceGenerator = Math.floor(Math.random()*3);
@@ -48,6 +49,7 @@ let gameOver = () => {
         playerScore = 0;
         displayPlayerScore.innerHTML = `${playerScore}`
         document.getElementById('playerClick').innerHTML = ""
+        buzzer.play();
     } else if(opponentScore == 16){
         alert("YOU LOSE")
         opponentScore = 0;
@@ -66,6 +68,7 @@ let restartGame = () =>{
     playerScore = 0;
     displayPlayerScore.innerHTML = `${playerScore}`
     document.getElementById('playerClick').innerHTML = ""
+    buzzer.play();
 }
 // ensures opponent choice gets randomized every turn
 let resetOpponentDecision = () => {
