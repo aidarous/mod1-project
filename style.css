@@ -96,8 +96,8 @@ body{
 #button-background{
     background: url('assets/bballcourt.png')50% ;
     height: 600;
-    width: 650px;
-    
+    width: 600px;
+    justify-content: center;
 }
 .outcome{
     size: 20vh;
